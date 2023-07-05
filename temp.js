@@ -23,8 +23,8 @@ const merge = (leftArr, rightArr) => {
     ...rightArr.slice(rightIndex),
   ];
 };
-
-console.log(merge([3, 6], [2, 4]));
+console.log([3,6], [2, 4])
+console.log(merge([29, 30], [8, 19]));
 
 // recursion
 // const mergeSort = (array) => {

@@ -1,3 +1,17 @@
+// Divide and conquer
+
+const arr = [1,2,3,5,6,11,15,24,26,27,29,32,35,37,38,39,42,44,45,47,51,54];
+let count = 0      // keeps track of number of operations (for time complexity)
+
+for (let i = 0; i < arr.length; i++){
+  count++
+  console.log('performed', count, 'operations')
+  if (arr[i] === 47) return 'found'
+}
+
+
+
+
 function mergeSort(inputList) {
   const { length } = inputList;
   // Base case for recursion (infinite loop without this!)
@@ -15,7 +29,7 @@ function mergeSort(inputList) {
 function merge(left, right) {
   console.log(`Merging two lists of length ${left.length} and ${right.length}`);
 
-  return [...left, ...right];
+  return [...arr, ...left, ...right];
 }
 
 // Implement a merge sort for a list of integers. Your solution must run in O(n*logn) time for a list of length n.
